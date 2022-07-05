@@ -89,13 +89,18 @@ header .top-header {
 
 .form input {
     width: 100%;
-    background-color: var(--gris-claro);
 }
 
 .form button {
-    background-color: var(--gris-claro);
     border-radius: 0 5px 5px 0;
 }
+
+.form button, .form input {
+    padding: 5px;
+    background-color: var(--gris-claro);
+    border: none;
+}
+
 
 header .navbar {
     display: none;
