@@ -41,24 +41,21 @@
         <form action="/" class="contenedor-form"> <!--https://lenguajehtml.com/html/formularios/validaciones-html5/   para saber de validaciones-->
             <div class="contenido-form">
                 <p class="elementos-form">
-                    <label for="nomap">Nombre y Apellido:</label>
                     <input type="text" name="nomap" id="nomap" placeholder="Nombre y Apellido..." pattern="[a-zA-Z]" >
                 </p>
                 <p class="elementos-form">
-                    <label for="nomuser">Nombre de Usuario:</label>
                     <input type="text" name="nomuser" id="nomuser" placeholder="Nombre de Usuario..." required >
+                </p>
+                <p class="elementos-form">
+                    <input type="text" name="dom" id="dom" placeholder="Domicilio..." required>
                 </p>
             </div>
             <h4>Fecha de nacimiento</h4>
             <div class="contenido-form">
                 <p class="elementos-form">
-                    <label for="edad">Fecha de nacimiento</label>
                     <input type="date" value="2000-04-23" id="edad">
                 </p>
-                <p class="elementos-form">
-                    <label for="dom">Domicilio:</label>
-                    <input type="text" name="dom" id="dom" placeholder="Domicilio..." required>
-                </p>
+                
             </div>
             <h4>Perfil de Usuario</h4>
             <div class="contenido-form">
@@ -94,16 +91,15 @@
             </div>
             <div class="contenido-form">
                 <p class="elementos-form">
-                    <label for="contraseña">Contraseña</label> <input type="password" name="contraseña" id="contraseña" required pattern="[A-Za-z0-9]" title="Contraseña alfanumerica">
+                    <input type="password" name="contraseña" id="contraseña" required pattern="[A-Za-z0-9]" placeholder="Contraseña" title="Contraseña alfanumerica">
                 </p>
                 <p class="elementos-form">
-                    <label for="confContraseña">Confirmar contraseña</label> <input type="password"
-                        name="confContraseña" id="confContraseña" required  pattern="[A-Za-z0-9]" title="Contraseña alfanumerica"> 
+                    <input type="password" name="confContraseña" id="confContraseña" required  pattern="[A-Za-z0-9]" placeholder="Repetir Contraseña" title="Contraseña alfanumerica"> 
                 </p>
             </div>
             <div class="btns-registro">
-                <input type="submit" name="registrar" id="btn-registrar" value="REGISTRAR">
-                <button type="reset" name="resetRegistro" id="btn-reset-registro">BORRAR</button>
+                <input class="btn-g" type="submit" name="registrar" id="btn-registrar" value="REGISTRAR">
+                <button class="btn-g" type="reset" name="resetRegistro" id="btn-reset-registro">BORRAR</button>
             </div>
         </form>
     </main>
